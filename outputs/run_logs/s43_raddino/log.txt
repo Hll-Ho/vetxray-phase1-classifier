@@ -1,0 +1,40 @@
+2026-11-19 17:40:27,001 | INFO | === W8 phase1 train: model=rad_dino_lora size=518 probe=False ===
+2026-11-19 17:40:27,002 | INFO | recipe check PASS: 8 字段与 W3 一致；W3 seed=42
+2026-11-19 17:40:27,024 | INFO | classes(18 frozen order): ['no_finding', 'cardiomegaly', 'alveolar_pattern', 'bronchial_pattern', 'pleural_effusion', 'mass', 'interstitial_pattern', 'pneumothorax', 'pleural_mineralization', 'megaesophagus', 'foreign_body', 'hernia', 'tracheal_collapse', 'diaphragmatic_hernia', 'fracture', 'pneumomediastinum', 'pneumoderma', 'costal_fracture']
+2026-11-19 17:40:27,035 | INFO | split check PASS | train=5489 val=583 overlap=0 missing=0 extra=0
+2026-11-19 17:40:27,036 | INFO | rad-dino normalize from manifest: mean=[0.5307, 0.5307, 0.5307] std=[0.2583, 0.2583, 0.2583] (source=operator-supplied (transcribed from https://huggingface.co/microsoft/rad-dino))
+2026-11-19 17:40:27,804 | INFO | data: train=5489 val=583 images_dir=<VETPETS_ROOT>\data\images
+2026-11-19 17:40:31,502 | INFO | loss=focal
+2026-11-19 17:40:36,885 | INFO | batch probe OK: batch=16 grad_accum=1 (effective=16)
+2026-11-19 17:40:36,894 | INFO | params: total=86.9M trainable=0.3M (lora=0.3M)
+2026-11-19 17:40:36,895 | INFO | stage1 (frozen backbone) epochs=2 lr=1e-03
+2026-11-19 17:45:54,737 | INFO | epoch 1 [head_warmup] loss=0.0449 val_mAP=0.2190 val_F1=0.0992 time=315.7s vram=5.71GB *best
+2026-11-19 17:45:54,737 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 17:50:24,592 | INFO | epoch 2 [head_warmup] loss=0.0343 val_mAP=0.2545 val_F1=0.1779 time=267.8s vram=5.71GB *best
+2026-11-19 17:50:24,593 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 17:50:24,595 | INFO | stage2 trainable=0.3M (backbone/lora lr=1e-04 head lr=1e-03)
+2026-11-19 17:50:48,852 | INFO | B-4 probe OK: 30 steps peak 6.42GB < 6.5GB -> keep bs=16
+2026-11-19 17:55:18,809 | INFO | epoch 3 [finetune] loss=0.0303 val_mAP=0.3002 val_F1=0.1704 time=267.9s vram=5.71GB *best
+2026-11-19 17:55:18,809 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 17:59:48,805 | INFO | epoch 4 [finetune] loss=0.0293 val_mAP=0.3279 val_F1=0.2245 time=267.9s vram=5.71GB *best
+2026-11-19 17:59:48,806 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:04:18,655 | INFO | epoch 5 [finetune] loss=0.0269 val_mAP=0.3372 val_F1=0.2338 time=267.8s vram=5.71GB *best
+2026-11-19 18:04:18,655 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:08:48,452 | INFO | epoch 6 [finetune] loss=0.0254 val_mAP=0.3543 val_F1=0.2695 time=267.7s vram=5.71GB *best
+2026-11-19 18:08:48,452 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:13:18,510 | INFO | epoch 7 [finetune] loss=0.0243 val_mAP=0.3687 val_F1=0.3301 time=268.0s vram=5.71GB *best
+2026-11-19 18:13:18,511 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:17:48,430 | INFO | epoch 8 [finetune] loss=0.0228 val_mAP=0.3766 val_F1=0.3149 time=267.8s vram=5.71GB *best
+2026-11-19 18:17:48,430 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:22:17,251 | INFO | epoch 9 [finetune] loss=0.0219 val_mAP=0.3587 val_F1=0.3051 time=267.8s vram=5.71GB
+2026-11-19 18:22:17,252 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:26:46,014 | INFO | epoch 10 [finetune] loss=0.0209 val_mAP=0.3580 val_F1=0.2996 time=267.7s vram=5.71GB
+2026-11-19 18:26:46,015 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:31:14,917 | INFO | epoch 11 [finetune] loss=0.0198 val_mAP=0.3657 val_F1=0.3030 time=267.8s vram=5.71GB
+2026-11-19 18:31:14,918 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:35:43,454 | INFO | epoch 12 [finetune] loss=0.0193 val_mAP=0.3556 val_F1=0.3075 time=267.5s vram=5.71GB
+2026-11-19 18:35:43,454 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:40:12,198 | INFO | epoch 13 [finetune] loss=0.0187 val_mAP=0.3624 val_F1=0.2949 time=267.7s vram=5.71GB
+2026-11-19 18:40:12,199 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 18:40:12,203 | INFO | early stop: no val mAP improvement for 5 epochs
+2026-11-19 18:40:12,431 | INFO | done. best_epoch=8 best_val_map=0.3766 consumable=True

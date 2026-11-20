@@ -1,0 +1,402 @@
+{
+  "model": "convnext_small",
+  "ckpt": "<VETPETS_ROOT>\\outputs\\W8\\phase1_main\\s44_focal\\convnext_small\\last.pth",
+  "ckpt_epoch": 14,
+  "created_at": "2026-11-19T21:34:23",
+  "cal_file": "<VETPETS_ROOT>\\outputs\\W2\\splits\\cal.csv",
+  "cal_md5": "b0673c69b1e886c286cc652a4a312db7",
+  "cal_n": 583,
+  "report_file": "<VETPETS_ROOT>\\data\\val.csv",
+  "report_md5": "7b51df16437ecefe5eef46d00514df1f",
+  "report_n": 1623,
+  "identity": {
+    "cal_macro_map": 0.5106040256947109,
+    "cal_macro_f1_at_0.5": 0.4229973897473223,
+    "train_log_val_map": 0.5106266547821735,
+    "abs_diff_map": 2.262908746264447e-05,
+    "train_log_val_f1": 0.4229973897473223,
+    "abs_diff_f1": 0.0,
+    "ok": true
+  },
+  "n_evaluable": 12,
+  "n_evaluable_ok_12": true,
+  "classes_evaluable": [
+    "no_finding",
+    "cardiomegaly",
+    "alveolar_pattern",
+    "bronchial_pattern",
+    "pleural_effusion",
+    "mass",
+    "interstitial_pattern",
+    "pneumothorax",
+    "pleural_mineralization",
+    "megaesophagus",
+    "foreign_body",
+    "hernia"
+  ],
+  "macro_map": 0.516015014242697,
+  "macro_f1": 0.4674655134050956,
+  "mild_group_ap": 0.3076440876007997,
+  "ref_group_ap": 0.26527574484718225,
+  "gates": {
+    "map": {
+      "value": 0.516015014242697,
+      "gate": 0.56,
+      "pass": false,
+      "near": false
+    },
+    "f1": {
+      "value": 0.4674655134050956,
+      "gate": 0.52,
+      "pass": false,
+      "near": false
+    },
+    "mild_group": {
+      "value": 0.3076440876007997,
+      "gate": 0.38,
+      "pass": false
+    },
+    "ref_group": {
+      "value": 0.26527574484718225,
+      "gate": 0.28,
+      "pass": false
+    },
+    "nondegen_six": {
+      "NOF": {
+        "value": 0.8369879968744549,
+        "gate": 0.8337,
+        "pass": true
+      },
+      "PLE": {
+        "value": 0.8559219967528952,
+        "gate": 0.8439,
+        "pass": true
+      },
+      "CMG": {
+        "value": 0.7416094535317354,
+        "gate": 0.7212,
+        "pass": true
+      },
+      "ALV": {
+        "value": 0.7433158797304971,
+        "gate": 0.7007,
+        "pass": true
+      },
+      "PTX": {
+        "value": 0.6972177430278208,
+        "gate": 0.6992,
+        "pass": false
+      },
+      "FB": {
+        "value": 0.5983676036510148,
+        "gate": 0.6,
+        "pass": false
+      }
+    }
+  },
+  "per_class": [
+    {
+      "class": "no_finding",
+      "abbr": "NOF",
+      "report_pos": 797,
+      "threshold": 0.4646889567375183,
+      "threshold_status": "cal max-F1",
+      "AP": 0.8369879968744549,
+      "F1": 0.8141891891891893,
+      "P": 0.7385086823289071,
+      "R": 0.9071518193224593
+    },
+    {
+      "class": "cardiomegaly",
+      "abbr": "CMG",
+      "report_pos": 438,
+      "threshold": 0.08819004148244858,
+      "threshold_status": "cal max-F1",
+      "AP": 0.7416094535317354,
+      "F1": 0.629090909090909,
+      "P": 0.5226586102719033,
+      "R": 0.7899543378995434
+    },
+    {
+      "class": "alveolar_pattern",
+      "abbr": "ALV",
+      "report_pos": 284,
+      "threshold": 0.2011847198009491,
+      "threshold_status": "cal max-F1",
+      "AP": 0.7433158797304971,
+      "F1": 0.6963434022257551,
+      "P": 0.6347826086956522,
+      "R": 0.7711267605633803
+    },
+    {
+      "class": "bronchial_pattern",
+      "abbr": "BRC",
+      "report_pos": 159,
+      "threshold": 0.21568095684051514,
+      "threshold_status": "cal max-F1",
+      "AP": 0.2918695164968546,
+      "F1": 0.33429394812680113,
+      "P": 0.30851063829787234,
+      "R": 0.36477987421383645
+    },
+    {
+      "class": "pleural_effusion",
+      "abbr": "PLE",
+      "report_pos": 133,
+      "threshold": 0.08254930377006531,
+      "threshold_status": "cal max-F1",
+      "AP": 0.8559219967528952,
+      "F1": 0.7667731629392972,
+      "P": 0.6666666666666666,
+      "R": 0.9022556390977443
+    },
+    {
+      "class": "mass",
+      "abbr": "MAS",
+      "report_pos": 105,
+      "threshold": 0.36590972542762756,
+      "threshold_status": "cal max-F1",
+      "AP": 0.3352527277175799,
+      "F1": 0.34594594594594597,
+      "P": 0.4,
+      "R": 0.3047619047619048
+    },
+    {
+      "class": "interstitial_pattern",
+      "abbr": "INT",
+      "report_pos": 92,
+      "threshold": 0.303628534078598,
+      "threshold_status": "cal max-F1",
+      "AP": 0.186596892909049,
+      "F1": 0.22099447513812157,
+      "P": 0.2247191011235955,
+      "R": 0.21739130434782608
+    },
+    {
+      "class": "pneumothorax",
+      "abbr": "PTX",
+      "report_pos": 42,
+      "threshold": 0.3145767152309418,
+      "threshold_status": "cal max-F1",
+      "AP": 0.6972177430278208,
+      "F1": 0.59375,
+      "P": 0.8636363636363636,
+      "R": 0.4523809523809524
+    },
+    {
+      "class": "pleural_mineralization",
+      "abbr": "PLM",
+      "report_pos": 26,
+      "threshold": 0.2557152211666107,
+      "threshold_status": "cal max-F1",
+      "AP": 0.2958100185879646,
+      "F1": 0.3076923076923077,
+      "P": 0.3076923076923077,
+      "R": 0.3076923076923077
+    },
+    {
+      "class": "megaesophagus",
+      "abbr": "MGE",
+      "report_pos": 23,
+      "threshold": 0.6021785736083984,
+      "threshold_status": "cal max-F1",
+      "AP": 0.33195373921495064,
+      "F1": 0.15384615384615383,
+      "P": 0.6666666666666666,
+      "R": 0.08695652173913043
+    },
+    {
+      "class": "foreign_body",
+      "abbr": "FB",
+      "report_pos": 17,
+      "threshold": 0.5531130433082581,
+      "threshold_status": "cal max-F1",
+      "AP": 0.5983676036510148,
+      "F1": 0.48,
+      "P": 0.75,
+      "R": 0.35294117647058826
+    },
+    {
+      "class": "hernia",
+      "abbr": "HRN",
+      "report_pos": 8,
+      "threshold": 0.30125924944877625,
+      "threshold_status": "cal max-F1",
+      "AP": 0.2772766024175471,
+      "F1": 0.26666666666666666,
+      "P": 0.2857142857142857,
+      "R": 0.25
+    },
+    {
+      "class": "tracheal_collapse",
+      "abbr": "TRC",
+      "report_pos": 0,
+      "threshold": 0.5,
+      "threshold_status": "default 0.5 (no cal positives)",
+      "AP": NaN,
+      "F1": 0.0,
+      "P": 0.0,
+      "R": 0.0
+    },
+    {
+      "class": "diaphragmatic_hernia",
+      "abbr": "DPH",
+      "report_pos": 0,
+      "threshold": 0.5,
+      "threshold_status": "default 0.5 (no cal positives)",
+      "AP": NaN,
+      "F1": 0.0,
+      "P": 0.0,
+      "R": 0.0
+    },
+    {
+      "class": "fracture",
+      "abbr": "FRX",
+      "report_pos": 0,
+      "threshold": 0.5,
+      "threshold_status": "default 0.5 (no cal positives)",
+      "AP": NaN,
+      "F1": 0.0,
+      "P": 0.0,
+      "R": 0.0
+    },
+    {
+      "class": "pneumomediastinum",
+      "abbr": "PMD",
+      "report_pos": 0,
+      "threshold": 0.5,
+      "threshold_status": "default 0.5 (no cal positives)",
+      "AP": NaN,
+      "F1": 0.0,
+      "P": 0.0,
+      "R": 0.0
+    },
+    {
+      "class": "pneumoderma",
+      "abbr": "PDR",
+      "report_pos": 0,
+      "threshold": 0.5,
+      "threshold_status": "default 0.5 (no cal positives)",
+      "AP": NaN,
+      "F1": 0.0,
+      "P": 0.0,
+      "R": 0.0
+    },
+    {
+      "class": "costal_fracture",
+      "abbr": "CFR",
+      "report_pos": 0,
+      "threshold": 0.5,
+      "threshold_status": "default 0.5 (no cal positives)",
+      "AP": NaN,
+      "F1": 0.0,
+      "P": 0.0,
+      "R": 0.0
+    }
+  ],
+  "thresholds": {
+    "no_finding": {
+      "threshold": 0.4646889567375183,
+      "status": "cal max-F1",
+      "cal_pos": 273,
+      "cal_f1": 0.7779527559055117
+    },
+    "cardiomegaly": {
+      "threshold": 0.08819004148244858,
+      "status": "cal max-F1",
+      "cal_pos": 143,
+      "cal_f1": 0.6210526315789474
+    },
+    "alveolar_pattern": {
+      "threshold": 0.2011847198009491,
+      "status": "cal max-F1",
+      "cal_pos": 72,
+      "cal_f1": 0.6101694915254237
+    },
+    "bronchial_pattern": {
+      "threshold": 0.21568095684051514,
+      "status": "cal max-F1",
+      "cal_pos": 46,
+      "cal_f1": 0.4
+    },
+    "pleural_effusion": {
+      "threshold": 0.08254930377006531,
+      "status": "cal max-F1",
+      "cal_pos": 39,
+      "cal_f1": 0.6407766990291262
+    },
+    "mass": {
+      "threshold": 0.36590972542762756,
+      "status": "cal max-F1",
+      "cal_pos": 31,
+      "cal_f1": 0.39999999999999997
+    },
+    "interstitial_pattern": {
+      "threshold": 0.303628534078598,
+      "status": "cal max-F1",
+      "cal_pos": 25,
+      "cal_f1": 0.2758620689655172
+    },
+    "pneumothorax": {
+      "threshold": 0.3145767152309418,
+      "status": "cal max-F1",
+      "cal_pos": 14,
+      "cal_f1": 0.6923076923076924
+    },
+    "pleural_mineralization": {
+      "threshold": 0.2557152211666107,
+      "status": "cal max-F1",
+      "cal_pos": 7,
+      "cal_f1": 0.25
+    },
+    "megaesophagus": {
+      "threshold": 0.6021785736083984,
+      "status": "cal max-F1",
+      "cal_pos": 6,
+      "cal_f1": 0.6666666666666666
+    },
+    "foreign_body": {
+      "threshold": 0.5531130433082581,
+      "status": "cal max-F1",
+      "cal_pos": 4,
+      "cal_f1": 0.6666666666666666
+    },
+    "hernia": {
+      "threshold": 0.30125924944877625,
+      "status": "cal max-F1",
+      "cal_pos": 4,
+      "cal_f1": 0.6666666666666666
+    },
+    "tracheal_collapse": {
+      "threshold": 0.5,
+      "status": "default 0.5 (no cal positives)",
+      "cal_pos": 0
+    },
+    "diaphragmatic_hernia": {
+      "threshold": 0.5,
+      "status": "default 0.5 (no cal positives)",
+      "cal_pos": 0
+    },
+    "fracture": {
+      "threshold": 0.5,
+      "status": "default 0.5 (no cal positives)",
+      "cal_pos": 0
+    },
+    "pneumomediastinum": {
+      "threshold": 0.5,
+      "status": "default 0.5 (no cal positives)",
+      "cal_pos": 0
+    },
+    "pneumoderma": {
+      "threshold": 0.5,
+      "status": "default 0.5 (no cal positives)",
+      "cal_pos": 0
+    },
+    "costal_fracture": {
+      "threshold": 0.5,
+      "status": "default 0.5 (no cal positives)",
+      "cal_pos": 0
+    }
+  },
+  "low_freq_note": "6 classes with 0 report positives excluded from macro; AP=gated none"
+}

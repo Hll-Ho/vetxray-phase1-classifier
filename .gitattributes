@@ -1,0 +1,3 @@
+# Preserve exact bytes: this repository publishes hashed artifacts (split lists,
+# metrics.json, logs), so Git must not normalise line endings.
+* -text

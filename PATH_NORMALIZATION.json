@@ -1,0 +1,368 @@
+{
+ "code_provenance": [
+  {
+   "path": "code/train_phase1.py",
+   "source": "code\\w8\\train_phase1.py",
+   "source_sha256": "2f21e498f7a18ac6305958e9a0b31950b987aa2c7b945f6442d8f5f4c6a1d8da",
+   "source_bytes": 45490,
+   "released_sha256": "a338a953257384faa070272d363568229ab644def069b6290aa227986b1b3424",
+   "released_bytes": 45514,
+   "change": "absolute-path strings normalized to <VETPETS_ROOT>; no other edit"
+  },
+  {
+   "path": "code/w8_calibrate_eval.py",
+   "source": "code\\w8\\w8_calibrate_eval.py",
+   "source_sha256": "eabab19472bc5f765064ee25090cad67f09b010fb252255ba23e6fb2778d1461",
+   "source_bytes": 10436,
+   "released_sha256": "21ca654ca619851f48dadbd6bb5376701e4313037245ea41dc5cf552794086f5",
+   "released_bytes": 10456,
+   "change": "absolute-path strings normalized to <VETPETS_ROOT>; no other edit"
+  },
+  {
+   "path": "code/eval.py",
+   "source": "code\\eval.py",
+   "source_sha256": "345be574e490cb91191a48fdb3bf13119f6dbd80d398ab43ed55fac14ef6cb99",
+   "source_bytes": 12063,
+   "released_sha256": "7b763b12337acf2cbcfdd7b9516988d3aa57234db9a3aa9d7bed155b43eb7efc",
+   "released_bytes": 12079,
+   "change": "absolute-path strings normalized to <VETPETS_ROOT>; no other edit"
+  }
+ ],
+ "path_normalization": [
+  {
+   "file": "requirements.txt",
+   "os_paths": 0,
+   "user_home": 2
+  },
+  {
+   "file": "code\\eval.py",
+   "os_paths": 4,
+   "user_home": 0
+  },
+  {
+   "file": "code\\train_phase1.py",
+   "os_paths": 6,
+   "user_home": 0
+  },
+  {
+   "file": "code\\w8_calibrate_eval.py",
+   "os_paths": 5,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\eval\\s42_focal\\eval_metrics.json",
+   "os_paths": 3,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\eval\\s43_focal\\eval_metrics.json",
+   "os_paths": 3,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\eval\\s44_focal\\eval_metrics.json",
+   "os_paths": 3,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_asl\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_asl\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_asl\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_asl\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_bce\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_bce\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_bce\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_bce\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_focal\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_focal\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_focal\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_focal\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_pw\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_pw\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_pw\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_pw\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_raddino\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_raddino\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_raddino\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s42_raddino\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_asl\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_asl\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_asl\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_asl\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_bce\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_bce\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_bce\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_bce\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_focal\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_focal\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_focal\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_focal\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_pw\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_pw\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_pw\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_pw\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_raddino\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_raddino\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_raddino\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s43_raddino\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_asl\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_asl\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_asl\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_asl\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_bce\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_bce\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_bce\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_bce\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_focal\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_focal\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_focal\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_focal\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_pw\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_pw\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_pw\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_pw\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_raddino\\args.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_raddino\\log.txt",
+   "os_paths": 1,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_raddino\\metrics.json",
+   "os_paths": 7,
+   "user_home": 0
+  },
+  {
+   "file": "outputs\\run_logs\\s44_raddino\\split_check.txt",
+   "os_paths": 2,
+   "user_home": 0
+  }
+ ]
+}

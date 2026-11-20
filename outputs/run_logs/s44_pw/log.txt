@@ -1,0 +1,55 @@
+2026-11-19 15:22:30,993 | INFO | === W8 phase1 train: model=convnext_small size=512 probe=False ===
+2026-11-19 15:22:31,000 | INFO | recipe check PASS: 8 字段与 W3 一致；W3 seed=42
+2026-11-19 15:22:31,021 | INFO | classes(18 frozen order): ['no_finding', 'cardiomegaly', 'alveolar_pattern', 'bronchial_pattern', 'pleural_effusion', 'mass', 'interstitial_pattern', 'pneumothorax', 'pleural_mineralization', 'megaesophagus', 'foreign_body', 'hernia', 'tracheal_collapse', 'diaphragmatic_hernia', 'fracture', 'pneumomediastinum', 'pneumoderma', 'costal_fracture']
+2026-11-19 15:22:31,032 | INFO | split check PASS | train=5489 val=583 overlap=0 missing=0 extra=0
+2026-11-19 15:22:31,785 | INFO | data: train=5489 val=583 images_dir=<VETPETS_ROOT>\data\images
+2026-11-19 15:22:31,861 | INFO | pos_weight(auto): [0.92, 3.75, 7.07, 10.18, 17.8, 17.18, 18.96, 51.28, 59.32, 71.22, 102.57, 287.89, 287.89, 547.9, 608.89, 913.83, 913.83, 5488.0]
+2026-11-19 15:22:32,297 | INFO | loss=bce
+2026-11-19 15:22:34,378 | INFO | batch probe OK: batch=16 grad_accum=1 (effective=16)
+2026-11-19 15:22:34,387 | INFO | params: total=49.5M trainable=0.0M (lora=0.0M)
+2026-11-19 15:22:34,387 | INFO | stage1 (frozen backbone) epochs=2 lr=1e-03
+2026-11-19 15:24:35,675 | INFO | epoch 1 [head_warmup] loss=1.8429 val_mAP=0.1947 val_F1=0.1689 time=120.0s vram=0.81GB *best
+2026-11-19 15:24:35,675 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:25:51,294 | INFO | epoch 2 [head_warmup] loss=1.5071 val_mAP=0.2011 val_F1=0.1958 time=74.3s vram=0.81GB *best
+2026-11-19 15:25:51,294 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:25:51,300 | INFO | stage2 trainable=49.5M (backbone/lora lr=1e-04 head lr=1e-03)
+2026-11-19 15:26:43,336 | WARNING | B-4 probe >=6.5GB at bs=16 accum=1 peak 8.25GB
+2026-11-19 15:26:44,677 | WARNING | degraded to batch=8 grad_accum=2
+2026-11-19 15:27:16,629 | INFO | B-4 probe OK: 30 steps peak 5.11GB < 6.5GB -> keep bs=8
+2026-11-19 15:30:11,941 | INFO | epoch 3 [finetune] loss=1.5934 val_mAP=0.2076 val_F1=0.2069 time=174.0s vram=4.67GB *best
+2026-11-19 15:30:11,942 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:32:44,372 | INFO | epoch 4 [finetune] loss=1.4929 val_mAP=0.2354 val_F1=0.2300 time=151.2s vram=4.67GB *best
+2026-11-19 15:32:44,372 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:35:16,255 | INFO | epoch 5 [finetune] loss=1.5206 val_mAP=0.2208 val_F1=0.1326 time=151.2s vram=4.67GB
+2026-11-19 15:35:16,255 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:37:48,314 | INFO | epoch 6 [finetune] loss=1.3544 val_mAP=0.1510 val_F1=0.1459 time=151.3s vram=4.67GB
+2026-11-19 15:37:48,314 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:40:20,882 | INFO | epoch 7 [finetune] loss=1.0301 val_mAP=0.2558 val_F1=0.2431 time=151.3s vram=4.67GB *best
+2026-11-19 15:40:20,883 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:42:52,802 | INFO | epoch 8 [finetune] loss=1.0940 val_mAP=0.1956 val_F1=0.1553 time=151.3s vram=4.67GB
+2026-11-19 15:42:52,802 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:45:24,722 | INFO | epoch 9 [finetune] loss=1.3934 val_mAP=0.1780 val_F1=0.1230 time=151.3s vram=4.67GB
+2026-11-19 15:45:24,722 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:47:56,753 | INFO | epoch 10 [finetune] loss=0.9453 val_mAP=0.2522 val_F1=0.2347 time=151.4s vram=4.67GB
+2026-11-19 15:47:56,754 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:50:28,690 | INFO | epoch 11 [finetune] loss=0.8324 val_mAP=0.2437 val_F1=0.2306 time=151.3s vram=4.67GB
+2026-11-19 15:50:28,690 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:53:01,188 | INFO | epoch 12 [finetune] loss=0.7906 val_mAP=0.2893 val_F1=0.2286 time=151.2s vram=4.67GB *best
+2026-11-19 15:53:01,188 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:55:33,182 | INFO | epoch 13 [finetune] loss=0.6741 val_mAP=0.2510 val_F1=0.2479 time=151.3s vram=4.67GB
+2026-11-19 15:55:33,182 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 15:58:05,657 | INFO | epoch 14 [finetune] loss=0.6400 val_mAP=0.3055 val_F1=0.2795 time=151.2s vram=4.67GB *best
+2026-11-19 15:58:05,658 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 16:00:38,298 | INFO | epoch 15 [finetune] loss=0.5862 val_mAP=0.3061 val_F1=0.2673 time=151.4s vram=4.67GB *best
+2026-11-19 16:00:38,298 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 16:03:10,812 | INFO | epoch 16 [finetune] loss=0.5542 val_mAP=0.3222 val_F1=0.2937 time=151.2s vram=4.67GB *best
+2026-11-19 16:03:10,813 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 16:05:43,382 | INFO | epoch 17 [finetune] loss=0.5052 val_mAP=0.3407 val_F1=0.2998 time=151.3s vram=4.67GB *best
+2026-11-19 16:05:43,383 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 16:08:15,964 | INFO | epoch 18 [finetune] loss=0.4806 val_mAP=0.3433 val_F1=0.3099 time=151.3s vram=4.67GB *best
+2026-11-19 16:08:15,965 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 16:10:48,705 | INFO | epoch 19 [finetune] loss=0.4612 val_mAP=0.3436 val_F1=0.3120 time=151.5s vram=4.67GB *best
+2026-11-19 16:10:48,706 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 16:13:21,278 | INFO | epoch 20 [finetune] loss=0.4577 val_mAP=0.3505 val_F1=0.3139 time=151.2s vram=4.67GB *best
+2026-11-19 16:13:21,279 | INFO |   macro over 12/18 evaluable classes
+2026-11-19 16:13:21,506 | INFO | done. best_epoch=20 best_val_map=0.3505 consumable=True

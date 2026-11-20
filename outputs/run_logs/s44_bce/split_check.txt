@@ -1,0 +1,37 @@
+W1a split check
+==============================================================================
+labels rows           : 6072
+split file            : <VETPETS_ROOT>\outputs\W2\splits\train_minus_cal.csv
+  rows=5489 md5=71443df7aa6dea7de60ea3d2d0c06029
+split file            : <VETPETS_ROOT>\outputs\W2\splits\cal.csv
+  rows=583 md5=b0673c69b1e886c286cc652a4a312db7
+train rows            : 5489 (unique 5489)
+val rows              : 583 (unique 583)
+overlap               : 0
+union == labels.csv   : True
+missing (in labels)   : 0
+extra (not in labels) : 0
+class order (frozen)  : ['no_finding', 'cardiomegaly', 'alveolar_pattern', 'bronchial_pattern', 'pleural_effusion', 'mass', 'interstitial_pattern', 'pneumothorax', 'pleural_mineralization', 'megaesophagus', 'foreign_body', 'hernia', 'tracheal_collapse', 'diaphragmatic_hernia', 'fracture', 'pneumomediastinum', 'pneumoderma', 'costal_fracture']
+low-frequency (<20 positives overall): tracheal_collapse, diaphragmatic_hernia, fracture, pneumomediastinum, pneumoderma, costal_fracture
+
+per-class positives (train / val / total):
+  no_finding                     2852 /    273 /   3125
+  cardiomegaly                   1156 /    143 /   1299
+  alveolar_pattern                680 /     72 /    752
+  bronchial_pattern               491 /     46 /    537
+  pleural_effusion                292 /     39 /    331
+  mass                            302 /     31 /    333
+  interstitial_pattern            275 /     25 /    300
+  pneumothorax                    105 /     14 /    119
+  pleural_mineralization           91 /      7 /     98
+  megaesophagus                    76 /      6 /     82
+  foreign_body                     53 /      4 /     57
+  hernia                           19 /      4 /     23
+  tracheal_collapse                19 /      0 /     19
+  diaphragmatic_hernia             10 /      0 /     10
+  fracture                          9 /      0 /      9
+  pneumomediastinum                 6 /      0 /      6
+  pneumoderma                       6 /      0 /      6
+  costal_fracture                   1 /      0 /      1
+
+RESULT: PASS

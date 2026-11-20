@@ -1,0 +1,33 @@
+NOTICE
+======
+
+Third-party components and redistribution constraints
+-----------------------------------------------------
+
+1. Rad-DINO (biomedical ViT backbone, `microsoft/rad-dino`)
+   - The upstream weights are released under a research-only licence.
+   - This repository therefore contains **no model weights** of any kind: not the
+     pretrained backbone, not the LoRA adapters trained in this study.
+   - What is released instead is the adaptation recipe: base model identifier,
+     input resolution, LoRA hyper-parameters (r, alpha, target modules) and the
+     training configuration, all documented in `code/RADDINO_LORA_RECIPE.json` and
+     implemented in `code/train_phase1.py` (`--model rad_dino_lora`).
+   - Any reuse of the adapted weights must independently comply with the upstream
+     research-only terms.
+
+2. VetXRay (source radiograph dataset, DOI 10.5281/zenodo.19051776)
+   - Released upstream under CC BY 4.0.
+   - The images are **not** redistributed here; only case identifiers and split
+     membership are provided. Download the images from the DOI above and match on
+     the `filename` / `patient_id` columns.
+
+3. W7-VetXRay-Report corpus (DOI 10.5281/zenodo.24200927)
+   - A separate, model-generated report corpus; not bundled here.
+
+4. Derived data in `data/` and `outputs/` (split lists, run logs, metrics,
+   per-class reports, Figure 1 source data) is released under CC BY 4.0.
+
+5. Local absolute paths that appeared in run arguments and logs have been
+   normalised to placeholders (`<VETPETS_ROOT>`, `<USER_HOME>`) before release.
+   The per-file substitution counts are recorded in `PATH_NORMALIZATION.json`;
+   no numeric value, timestamp or metric was altered.

@@ -1,0 +1,31 @@
+{
+  "model": "rad_dino_lora",
+  "base_model": "microsoft/rad-dino",
+  "input_size": 518,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "target_modules": "qkv",
+    "params_total": "86.9M",
+    "params_trainable": 308754
+  },
+  "freezing": "backbone frozen for the first 2 epochs (head warm-up), then LoRA adapters train",
+  "optimizer": "AdamW",
+  "lr_head": 0.001,
+  "lr_backbone": 0.0001,
+  "weight_decay": 0.0001,
+  "batch_size": 16,
+  "grad_accum": 1,
+  "epochs": 20,
+  "patience": 5,
+  "loss": "focal (gamma=2.0)",
+  "seeds": [42, 43, 44],
+  "vram_probe": "peak 6.416 GiB (SMI 6,570 MiB); torch allocator peak 5.715 GiB",
+  "weights_released": false,
+  "weights_note": "Rad-DINO weights are research-only; this file is the recipe, not the weights",
+  "source_anchors": [
+    "code/train_phase1.py:194 inject_lora(m, r=8, alpha=16, target='qkv')",
+    "outputs/run_logs/s42_raddino/args.json",
+    "outputs/run_logs/s42_raddino/log.txt (params: total=86.9M trainable=0.3M; stage1 frozen backbone epochs=2 lr=1e-03)"
+  ]
+}
